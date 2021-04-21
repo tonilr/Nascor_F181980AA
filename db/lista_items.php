@@ -15,6 +15,7 @@ function imprimir_items(){
             $lista_items.="<tr><td>".$fila['id']."</td><td>".$fila['item']."</td><td>".$fila['stock']."</td><td><a href='db/deleteItem.php?id=$fila[id]'>Eliminar item</a></tr>";
         }
         $lista_items.="</table>";
+        $conn->close();//Cerramos conexión
         return $lista_items;
     }/* else{
         echo "Hay algo mal";
