@@ -18,5 +18,9 @@
         <div id="mensaje_stock"></div>
         <input type="submit" value="enviar">
     </form>
+    <?php
+    include "db/lista_items.php";
+    echo imprimir_items();
+    ?>
 </body>
 </html>
