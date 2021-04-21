@@ -1,6 +1,5 @@
 function valida_item(){
     let item=document.getElementById("item").value;
-    console.log(item);
     if(item==""){
         document.getElementById("mensaje_item").innerHTML="Debes escribir un nombre";
         return false
@@ -11,7 +10,6 @@ function valida_item(){
 }
 function valida_stock(){
     let stock=document.getElementById("stock").value;
-    console.log(stock);
     if(stock==""){
         document.getElementById("mensaje_stock").innerHTML="Debes escribir una cantidad";
         return false

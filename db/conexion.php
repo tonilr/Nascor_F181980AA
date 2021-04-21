@@ -1,4 +1,5 @@
 <?php
+//Generamos la conexión a la base de datos para reutilizarla en la aplicación
 function conexionDB(){
     //Conexión a la base de datos
     $server="localhost";
