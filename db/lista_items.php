@@ -12,7 +12,7 @@ function imprimir_items(){
         <th>STOCK</th>
         <th>ELIMINAR</th></tr>";
         while ($fila = $resultado->fetch_assoc()){
-            $lista_items.="<tr><td>".$fila['id']."</td><td>".$fila['item']."</td><td>".$fila['stock']."</td><td><a href=''>Eliminar item</a></tr>";
+            $lista_items.="<tr><td>".$fila['id']."</td><td>".$fila['item']."</td><td>".$fila['stock']."</td><td><a href='db/deleteItem.php?id=$fila[id]'>Eliminar item</a></tr>";
         }
         $lista_items.="</table>";
         return $lista_items;
