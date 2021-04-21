@@ -11,7 +11,7 @@ function imprimir_items(){
     //Si hay resultados
     if ($resultado->num_rows > 0 ){
         //Configuramos la variable para tener la lista de items en formato tabla HTML
-        $lista_items="<table><tr>
+        $lista_items="<table class='tabla'><tr>
         <th>ID</th>
         <th>ITEM</th>
         <th>STOCK</th>
